@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--custom css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- custom js -->
+    <script src="app.js" defer ></script>
+    <!-- custom icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="friend">
+            <h1 class="big-friend">카카오톡 친구목록</h1>
+            <ul id="friend-ul">
+                <li data-id="1">
+                    <label class="friend-list">
+                        <span class="name">홍길동</span><span class="phone-number">010.1234.5678</span>
+                        <div class="change">편집</div>
+                        <div class="remove">차단</div>
+                    </label>
+                </li>
+            </ul>
+            <div>
+                <h2 class="plus">친구추가</h2>
+                <button class="lnr lnr-plus-circle"></button>
+            </div>
+            <div>
+                <label>이름:<input type="text" class="text-name" placeholder="홍길동"></label>
+                <label>전화번호<input type="text" class="text-number" placeholder="010-1234-5678"></label>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
