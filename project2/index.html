@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--custom css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- custom js -->
+    <script src="app.js" defer ></script>
+    <!-- custom icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <section class="template">
+            <header>
+                <h1>친구목록 앱</h1>
+            </header>
+            <div class="friend-list">
+                <ul class="list">
+                    <li class="click clearfix" data-id="1">
+                        <div class="list-info">
+                            <span class="text">홍길동1 010-1234-5678</span>
+                        </div>
+                        <div class="mod">
+                            <div class="remove"><span class="lnr lnr-cross-circle"></span></div>
+                            <div class="modify"><span class="lnr lnr-undo"></span></div>
+                        </div>
+                    </li>
+                    <li class="click clearfix" data-id="2">
+                        <div class="list-info">
+                            <span class="text">홍길동2 010-1234-5678</span>
+                        </div>
+                        <div class="mod">
+                            <div class="remove"><span class="lnr lnr-cross-circle"></span></div>
+                            <div class="modify"><span class="lnr lnr-undo"></span></div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+            <footer>
+                <div class="footer-top">
+                    <h2>Friend Information</h2>
+                    <button id="add"><span class="lnr lnr-plus-circle"></span></button>
+                </div>
+                <div class="info">
+                    <label class="name">
+                        <input type="text" placeholder="이름을 입력하세요.">
+                    </label>
+                    <label class="phone-number">
+                        <input type="text" placeholder="전화번호를 입력하세요(-포함)">
+                    </label>
+                </div>
+            </footer>
+        </section>
+    </div>
+    
+
+</body>
+</html>

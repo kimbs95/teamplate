@@ -23,6 +23,7 @@ section.friend .big-friend {
     background: rgb(199, 199, 36);
     text-align: center;
     border-bottom: 4px solid #000;
+    font-weight: bold;
 }
 
 section.friend #friend-ul{
@@ -31,15 +32,20 @@ section.friend #friend-ul{
     overflow: auto;
 }
 section.friend #friend-ul li{
-    margin: 15px 5px; 
+    margin: 15px 0; 
     border-bottom: 2px solid #000;
 }
 section.friend #friend-ul li .lists{
     /* border-bottom: 2px solid #000; */
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
 }
+
 section.friend #friend-ul li .name{
     font-weight: 900;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 section.friend #friend-ul li .phone-number{
     font-weight: 600;
@@ -47,8 +53,12 @@ section.friend #friend-ul li .phone-number{
 section.friend #friend-ul li .lists div{
     display: inline;
     cursor: pointer;
-    float: right;
+    /* float: right; */
     margin-right: 20px;
+    font-weight: bold;
+}
+section.friend #friend-ul li .lists div.remove{
+    color: rgb(151, 10, 10);
 }
 section.friend .footer{
     border-top: 2px solid #000;
@@ -57,17 +67,19 @@ section.friend .footer{
 }
 section.friend .footer .plus{
     font-weight: 700;
+    margin-left: 10px;
     
 }
 section.friend .footer button {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     transform: scale(1.5);
     cursor: pointer;
 }
 section.friend .finish label{
     font-weight: 600;
+    margin-left: 10px;
 }
 section.friend .finish label input{
     margin-left: 5px;

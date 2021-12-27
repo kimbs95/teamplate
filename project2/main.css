@@ -1,0 +1,135 @@
+.wrap {
+    padding: 50px;
+    height: 100vh;
+    
+}
+.template {
+    width: 500px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.8);
+}
+
+
+/* header */
+.template header {
+    height: 70px;
+    background: skyblue;
+    text-align: center;
+}
+.template header h1 {
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* 친구 목록 */
+.template .friend-list {
+    height: 500px;
+    padding: 30px 40px;
+    overflow: auto;
+}
+.template .friend-list ul.list li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.template .friend-list ul.list li .list-info {
+    float: left;
+}
+
+.template .friend-list ul.list li .mod {
+    float: right;
+}
+.template .friend-list ul.list li .mod:nth-child(2) {
+    display: none;
+}
+.template .friend-list ul.list li:hover .mod:nth-child(2) {
+    display: block;
+}
+
+/* 수정 제거 버튼 */
+.template .friend-list ul.list li .mod .modify {
+    float: right;
+    font-size: 18px;
+    color: yellowgreen;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.template .friend-list ul.list li .mod .modify:hover {
+    transform: scale(1.2);
+}
+.template .friend-list ul.list li .mod .remove {
+    float: right;
+    margin-left: 20px;
+    font-size: 18px;
+    color: orangered;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.template .friend-list ul.list li .mod .remove:hover {
+    transform: scale(1.2);
+}
+
+/* footer */
+.template footer {
+    height: 150px;
+    background: skyblue;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.template footer .footer-top {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.template footer .footer-top h2 {
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+}
+.template footer .footer-top button {
+    float: right;
+    font-size: 20px;
+    border: none;
+    background: skyblue;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.template footer .footer-top button:hover {
+    color: white;
+    transform: scale(1.2);
+}
+.template footer .info {
+    /* background: lightgray; */
+    padding: 10px;
+    width: 40%;
+    margin: 0 auto;
+}
+.template footer .info label {
+    /* text-align: center; */
+}
+.template footer .info label.name {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.template footer .info label.name input {
+    border-radius: 5px;
+    height: 25px;
+    font-size: 15px;
+}
+.template footer .info label.phone-number input {
+    border-radius: 5px;
+    height: 25px;
+    font-size: 15px;
+}
