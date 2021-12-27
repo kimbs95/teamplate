@@ -12,7 +12,7 @@
 
 section.friend{
     border: 2px solid #000;
-    width: 50%;
+    width: 30%;
     display:block;
     border-radius: 2%;
     overflow: hidden;
@@ -22,13 +22,54 @@ section.friend .big-friend {
     padding: 20px 20px ;
     background: rgb(199, 199, 36);
     text-align: center;
-    border-bottom: 2px solid #000;
+    border-bottom: 4px solid #000;
 }
 
 section.friend #friend-ul{
     width: 100%;
     height: 600px;
+    overflow: auto;
 }
 section.friend #friend-ul li{
-    margin: 15px 0;
+    margin: 15px 5px; 
+    border-bottom: 2px solid #000;
+}
+section.friend #friend-ul li .lists{
+    /* border-bottom: 2px solid #000; */
+    margin-bottom: 10px;
+}
+section.friend #friend-ul li .name{
+    font-weight: 900;
+}
+section.friend #friend-ul li .phone-number{
+    font-weight: 600;
+}
+section.friend #friend-ul li .lists div{
+    display: inline;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+section.friend .footer{
+    border-top: 2px solid #000;
+    padding: 10px 0;
+    position: relative;
+}
+section.friend .footer .plus{
+    font-weight: 700;
+    
+}
+section.friend .footer button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+section.friend .finish label{
+    font-weight: 600;
+}
+section.friend .finish label input{
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
