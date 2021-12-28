@@ -2,15 +2,17 @@
 const friends =[
     {
         name:'홍길동1',
+        id:0,
         number:010-1234-5678
     },
 
     {
         name:'홍길동2',
+        id:1,
         number:010-1234-5678
     }
 ];
-
+console.log(friends);
 
 // 수정하는부분 input 으로 변경  부분
 
@@ -58,7 +60,7 @@ function $check(target){
     //데이터 변경
     const $datas = $textspan.parentElement.parentElement.dataset.id
     const $indexnumber =index(+$datas);
-    friends[$indexnumber].text =$textspan.textContent;
+    friends[$indexnumber].name =$textspan.textContent;
 }
 
 // 렌더링 삭제 데이터 삭제
