@@ -69,7 +69,7 @@ function $dele(target){
 
     // 데이터 삭제
     const bye = index(+listLi.dataset.id);
-    friends.splice(bye,1)
+    friends.splice(bye,1);
 
 }
 
@@ -98,12 +98,12 @@ function index(number){
 const $ulList = document.querySelector('.list');
 $ulList.addEventListener('click',function(e){
     if(e.target.matches('div.modify .lnr-undo')){
-        $modify(e.target);
+        $modify(e.target);//수정진입
     }else if (e.target.matches('div.modify .lnr-checkmark-circle')){
-        $check(e.target);
+        $check(e.target);//수정완료
         // console.log($check);
     }else if (e.target.matches('div.remove .lnr-cross-circle')){
-        $dele(e.target);
+        $dele(e.target);//삭제
     }
 })
 
